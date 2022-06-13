@@ -1,0 +1,57 @@
+.contact-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-list__item+.contact-list__item {
+    margin-left: 50px;
+}
+
+.contact-list__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+
+
+/* Иконки */
+.contact-list__mail-icon {
+    margin: 0;
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        fill: currentColor;
+    }
+}
+
+
+
+.contact-list__tel-icon {
+    margin: 0;
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        fill: currentColor;
+    }
+}
+
