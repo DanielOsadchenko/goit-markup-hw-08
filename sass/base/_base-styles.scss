@@ -1,7 +1,7 @@
 body {
     background-color: $white-color;
     color: $main-text-color;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     letter-spacing: 0.03em;
 }
 
@@ -19,17 +19,18 @@ ul {
 }
 
 .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    min-width: 320px;
+    max-width: 480px;
+    // padding-left: 15px;
+    // padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+// .section {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
 
 .link {
     text-decoration: none;
@@ -47,7 +48,7 @@ ul {
     line-height: 1.17;
     text-align: center;
     color: $title-text-color;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 }
 
 .invisible {

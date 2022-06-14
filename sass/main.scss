@@ -1,11 +1,13 @@
+// Переменные
 @import "./utils/variables";
+// Базовые стили
 @import "./base/base-styles";
+// Шапка
 @import "./components/page-header";
 @import "./components/header-logo";
 @import "./components/nav";
-@import "./components/header-menu";
 @import "./utils/active-page";
-@import "./components/header-contacts";
+// Герой
 @import "./components/hero";
 @import "./components/benefits";
 @import "./components/examples";

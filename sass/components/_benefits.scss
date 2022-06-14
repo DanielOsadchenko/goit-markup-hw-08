@@ -1,27 +1,15 @@
 .benefits {
-    display: flex;
 }
 
 .benefits__item {
-    width: 270px;
 
-    & + & {
-        margin-left: 30px;
-    }
 }
 
 
 
 .benefits__bg {
-    display: flex;
-    width: 270px;
-    height: 120px;
-    text-align: center;
-    margin-bottom: 30px;
     background-color: #f5f4fa;
     border-radius: 4px;
-    justify-content: center;
-    align-items: center;
 }
 
 .benefits__icon {
@@ -34,7 +22,6 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: $title-text-color;
-    margin-bottom: 10px;
 }
 
 .benefits__text {
