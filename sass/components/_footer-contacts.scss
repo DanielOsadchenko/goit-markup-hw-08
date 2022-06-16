@@ -1,4 +1,10 @@
 .footer-list {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-list__item+.footer-list__item {
+    margin-top: 8px;
 }
 
 .footer-list__link {

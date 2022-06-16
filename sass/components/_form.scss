@@ -8,9 +8,12 @@
 .form-container__title {
     display: inline-block;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     margin-bottom: 12px;
+    @include desktop {
+        line-height: 1.15;
+    }
 }
 
 .form__field {
@@ -33,7 +36,6 @@
 
 .form__input {
     width: 100%;
-    margin-top: 4px;
     padding-left: 42px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -91,12 +93,17 @@
 
 .checkbox {
     position: relative;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.16;
     color: #757575;
     display: block;
     margin-top: 20px;
-    padding-left: 36px;
+    padding-left: 20px;
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.71;
+        padding-left: 36px;
+    }
 }
 
 .checkbox__input {
@@ -109,7 +116,7 @@
 .checkbox__icon {
     position: absolute;
     top: 50%;
-    left: 13px;
+    left: 0;
     transform: translateY(-50%);
     border: 2px solid $title-text-color;
     border-radius: 2px;

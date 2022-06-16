@@ -1,6 +1,9 @@
 .examples-section {
     display: none;
     padding-top: 0px;
+    @include desktop {
+        display: block;
+    }
 }
 
 .examples-list {

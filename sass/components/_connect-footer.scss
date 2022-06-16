@@ -1,6 +1,11 @@
 .connect {
+    margin-top: 60px;
+
+    @include desktop {
+    margin-top: 0;
     margin-left: 70px;
-    padding-top: 12px;
+    padding-top: 12px;   
+    }
 }
 
 .connect__link {
@@ -21,6 +26,7 @@
 
 .connect__list {
     display: flex;
+    justify-content: center;
 }
 
 .connect__icon {
@@ -30,6 +36,7 @@
 }
 
 .connect__title {
+    text-align: center;
     color: $white-color;
     font-weight: 700;
     font-size: 14px;

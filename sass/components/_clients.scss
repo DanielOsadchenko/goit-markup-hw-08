@@ -1,16 +1,29 @@
 .clients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     text-decoration: none;
     list-style-type: none;
 }
 
+.clients__item {
+    flex-basis: calc((100% - 30px) / 2);
+
+    @include desktop {
+    & + & {
+        margin-left: 30px;
+    }
+    }
+}
+
 .clients__link {
-    display: block;
+    display: flex;
+    max-width: 210px;
+    height: 92px;
     border-radius: 4px;
     border: 1px solid #afb1b8;
-    // padding-top: 16px;
-    // padding-bottom: 16px;
-    // padding-left: 32px;
-    // padding-right: 32px;
+    align-items: center;
+    justify-content: center;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
@@ -19,6 +32,8 @@
 }
 
 .clients__icon {
+    width: 106px;
+    height: 60px;
     fill: #afb1b8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

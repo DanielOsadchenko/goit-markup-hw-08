@@ -24,13 +24,14 @@
             <!-- Навигация -->
             <div class="nav-display">
                 <a href="./index.html" class="logo link"><span class="logo__accent">Web</span>Studio</a>
-                <button type="button" class="menu__button" aria-expanded="false" aria-controls="menu" data-menu-button>
-                    <svg width="40" height="40" class="menu__svg">
-                        <use href="./images/icons.svg#menu" class="menu__menu-icon"></use>
-                        <use href="./images/icons.svg#cross" class="menu__cross-icon"></use>
+                <button data-menu-button type="button" class="mobile-menu__button" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <svg class="mobile-menu__svg" width="40" height="40">
+                        <use href="./images/icons.svg#menu" class="mobile-menu__menu-icon "></use>
+                        <use href="./images/icons.svg#cross" class="mobile-menu__cross-icon"></use>
                     </svg>
                 </button>
-                <div class="menu" data-menu>
+                <div class="mobile-menu" data-menu>
                     <nav class="nav-container">
                         <ul class="nav-list marker">
                             <li class="nav-list__item"><a href="./index.html"
@@ -49,10 +50,17 @@
                                     <use href="./images/icons.svg#mail"></use>
                                 </svg>info@devstudio.com</a>
                         </li>
-                        <li class="contact-list__item"><a href="tel:+380961111111" class="contact-list__link"><svg
-                                    class="contact-list__tel-icon">
+                        <li class="contact-list__item order"><a href="tel:+380961111111"
+                                class="contact-list__link mobile"><svg class="contact-list__tel-icon">
                                     <use href="./images/icons.svg#tel"></use>
                                 </svg>+38 096 111 11 11</a></li>
+                    </ul>
+                    <!-- Список соц сетей -->
+                    <ul class="socials-header marker">
+                        <li class="socials-header__item"><a class="socials-header__link link" href="">Instagram</a></li>
+                        <li class="socials-header__item"><a class="socials-header__link link" href="">Twitter</a></li>
+                        <li class="socials-header__item"><a class="socials-header__link link" href="">Facebook</a></li>
+                        <li class="socials-header__item"><a class="socials-header__link link" href="">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
@@ -472,8 +480,8 @@
             </div>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

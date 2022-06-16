@@ -1,9 +1,15 @@
 .footer-logo {
+    display: block;
+    text-align: center;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
     color: $white-color;
     font-family: 'Raleway', sans-serif;
+
+    @include desktop {
+        font-size: 26px;
+    }
 }
 
 .footer-logo__accent {
