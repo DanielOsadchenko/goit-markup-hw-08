@@ -7,9 +7,23 @@
 .footer-block {
     @include tablet {
         display: flex;
+        flex-wrap: wrap;
         }
     @include desktop {
-        display: flex;   
+        flex-wrap: nowrap;
     }
+
     
+}
+.tablet-container {
+    width: 100%;
+    @include tablet {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+    @include desktop {
+        justify-content: left;
+    }
+
 }

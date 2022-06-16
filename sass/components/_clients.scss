@@ -4,11 +4,17 @@
     gap: 30px;
     text-decoration: none;
     list-style-type: none;
+    @include desktop {
+        flex-wrap: nowrap;
+        gap: 0;
+    }
 }
 
 .clients__item {
     flex-basis: calc((100% - 30px) / 2);
-
+    @include tablet {
+        flex-basis: calc((100% - 60px) / 3);
+    }
     @include desktop {
     & + & {
         margin-left: 30px;
@@ -18,7 +24,6 @@
 
 .clients__link {
     display: flex;
-    max-width: 210px;
     height: 92px;
     border-radius: 4px;
     border: 1px solid #afb1b8;

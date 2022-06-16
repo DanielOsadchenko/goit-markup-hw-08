@@ -1,6 +1,9 @@
 .footer-list {
     text-align: center;
     margin-top: 20px;
+    @include desktop {
+        text-align: left;
+    }
 }
 
 .footer-list__item+.footer-list__item {

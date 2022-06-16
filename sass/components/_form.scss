@@ -100,10 +100,12 @@
     margin-top: 20px;
     padding-left: 20px;
     @include desktop {
+
         font-size: 14px;
         line-height: 1.71;
         padding-left: 36px;
     }
+    
 }
 
 .checkbox__input {
@@ -132,6 +134,9 @@
         border-radius: 2px;
         background-color: $accent-color;
         fill: $white-color;
+    }
+    @include desktop {
+        left: 12px;
     }
 }
 

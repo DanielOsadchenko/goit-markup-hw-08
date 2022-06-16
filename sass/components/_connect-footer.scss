@@ -1,10 +1,12 @@
 .connect {
     margin-top: 60px;
-
+    @include tablet {
+        margin-left: 165px;
+        margin-top: 0;
+    }
     @include desktop {
     margin-top: 0;
-    margin-left: 70px;
-    padding-top: 12px;   
+    margin-left: 70px;   
     }
 }
 
