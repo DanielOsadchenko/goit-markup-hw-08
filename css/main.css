@@ -648,6 +648,12 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: left;
+  }
+}
+
 .benefits__text {
   font-size: 14px;
   line-height: 1.71;
