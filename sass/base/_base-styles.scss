@@ -17,7 +17,11 @@ ul {
     padding: 0;
     border: 0;
 }
-
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .container {
     min-width: 320px;
     max-width: 480px;

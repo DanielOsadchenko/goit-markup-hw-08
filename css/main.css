@@ -19,6 +19,12 @@ ul {
   border: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   min-width: 320px;
   max-width: 480px;
@@ -473,8 +479,8 @@ ul {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero_bg.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/Mobile/hero-mobile.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Mobile/hero-mobile.jpg);
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -487,6 +493,13 @@ ul {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Mobile/hero-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Mobile/hero-mobile@2x.jpg");
   }
 }
 
@@ -527,6 +540,34 @@ ul {
   border: none;
   border-radius: 4px;
   border-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Tablet/hero-tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Tablet/hero-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Tablet/hero-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Tablet/hero-tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Desktop/hero-desktop.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Desktop/hero-desktop.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Desktop/hero-desktop@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Desktop/hero-desktop@2x.jpg");
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1495,17 +1536,29 @@ ul {
   }
 }
 
-.filter__item + .filter__item {
-  margin-left: 8px;
+.filter__item {
+  margin-right: 8px;
 }
 
-@media (max-width: 767px) {
-  .filter__item:nth-child(4) {
-    margin-top: 15px;
-    margin-left: 0;
+.filter__item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .filter__item {
+    margin-bottom: 15px;
   }
-  .filter__item:nth-child(5) {
-    margin-top: 15px;
+  .filter__item:nth-child(3n+3) {
+    margin-right: 0;
+  }
+  .filter__item:nth-child(n+4) {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 392px) {
+  .filter__item:nth-child(4) {
+    margin-left: 8px;
   }
 }
 
