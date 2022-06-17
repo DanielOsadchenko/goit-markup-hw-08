@@ -151,7 +151,10 @@
             background-color: $white-color;
         
             &.is-open {
-                display: block;
+                display: flex;
+                position: fixed;
+                height: 100vh;
+                flex-direction: column;
             }
     }
     @include tablet {
@@ -165,7 +168,7 @@
 .contact-list {
     display: flex;
     flex-direction: column;
-    margin-top: 302px;
+    // margin-top: 302px;
     @media (min-width: 768px) {
         justify-content: flex-end;
         margin-top: 0;
@@ -236,6 +239,7 @@
     @media (max-width:767px) {
         margin-top: 64px;
         display: flex;
+        flex-wrap: wrap;
     }
     
 }
@@ -286,4 +290,9 @@
         }
     }
 
+}
+.footer-header {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
 }
